@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//import Greet from './component/greet';
+//import Welcome from './component/welcome'
+//import Counter from './component/counter';
+import Fun from './component/funDestructuring';
+import AllofEm from './component/destructuring';
+class App extends Component{
+  render(){
+    return(
+      <div className='comps'>
+        <AllofEm name="Drew Mcintyre" job="wrestler"/>
+        <Fun name="Evans" age="13" />
+        {/*<Welcome/>*/}
+        {/*<Counter />*/}
+      </div>
+    )
+  }
+} 
 
 export default App;
